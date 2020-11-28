@@ -10,11 +10,13 @@ git clone https://github.com/leonsick/Image-Capturing-Program.git
 ### Second step: Set up the application
 To setup the program, simply run the following command in the cloned folder:
 ```
-python3 setup.py --classes all your classes seperated with spaces
+python3 setup.py 
 ```
+This will setup the folder structure for the SmartCart project with the classes 'apple', 'banana', 'broccoli', 'paprika', 'aubergine', 'cucumber', 'orange', 'pear'
+
 Example:
 ```
-python3 setup.py --classes apple banana orange cucumber
+python3 setup.py
 ```
 ### Third step: Start capturing images for your project
 To start capturing, call the capture_images.py script with the following flags:
