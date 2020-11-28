@@ -12,7 +12,7 @@ To setup the program, simply run the following command in the cloned folder:
 ```
 python3 setup.py 
 ```
-This will setup the folder structure for the SmartCart project with the classes 'apple', 'banana', 'broccoli', 'paprika', 'aubergine', 'cucumber', 'orange', 'pear'
+This will setup the folder structure for the SmartCart project with the classes 'apple', 'banana', 'broccoli', 'paprika', 'aubergine', 'cucumber', 'orange' and 'pear'.
 
 Example:
 ```
