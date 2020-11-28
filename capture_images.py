@@ -16,11 +16,6 @@ image_class = str(args.iclass)
 dataset = str(args.dataset)
 size = str(args.size)
 
-try:
-	os.system('bash setup_folder structure.sh')
-except:
-	print("Error: Could not find shell script or folders are already present.")
-
 camera = cv2.VideoCapture(0)
 
 img_counter = 0
