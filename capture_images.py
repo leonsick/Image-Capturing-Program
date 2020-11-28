@@ -4,8 +4,6 @@ import cv2
 import uuid
 
 
-
-
 parser = argparse.ArgumentParser(description='Take a specific number of images with a pause of 3 seconds.')
 parser.add_argument('-n', '--number', type=int, help='`Specifiy the number of images you want to take.', required=True)
 parser.add_argument('-ic', '--iclass', help='`Specifiy the class of images you want to take.', required=True)
@@ -19,7 +17,7 @@ dataset = str(args.dataset)
 size = str(args.size)
 
 try:
-	os.system('bash setup_capture_images.sh')
+	os.system('bash setup_folder structure.sh')
 except:
 	print("Error: Could not find shell script or folders are already present.")
 
@@ -35,7 +33,7 @@ while img_counter < number_of_images:
 	if not status:
 		print("Image capture failed")
 		break
-	if size == "small"
+	if size == "small":
 		image_resized = cv2.resize(image, (300, 300))
 	else:
 		image_resized = cv2.resize(image, (1080, 720))
