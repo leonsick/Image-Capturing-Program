@@ -13,7 +13,7 @@ python3 setup.py --classes all your classes seperated with spaces
 Example:
 python3 setup.py --classes apple banana orange cucumber
 
-## Third step: Start capturing images for your project
+### Third step: Start capturing images for your project
 To start capturing, call the capture_images.py script with the following flags:
 - --number: The number of images you want to capture (required)
 - --iclass: The image class you want to capture data for (e.g. banana) (required)
