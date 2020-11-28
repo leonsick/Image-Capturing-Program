@@ -14,10 +14,6 @@ python3 setup.py
 ```
 This will setup the folder structure for the SmartCart project with the classes 'apple', 'banana', 'broccoli', 'paprika', 'aubergine', 'cucumber', 'orange' and 'pear'.
 
-Example:
-```
-python3 setup.py
-```
 ### Third step: Start capturing images for your project
 To start capturing, call the capture_images.py script with the following flags:
 - --number: The number of images you want to capture (required)
