@@ -31,14 +31,12 @@ while img_counter < number_of_images:
 		break
 	if size == "random":
 		rand = random.randint(1, 3)
-		print(rand)
 		if rand == 1:
 			size = "small"
 		if rand == 2:
 			size = "medium"
 		if rand == 3:
 			size = "large"
-		print(size)
 	if size == "small":
 		image_resized = cv2.resize(image, (300, 300))
 	elif size == "medium":
@@ -61,3 +59,5 @@ while img_counter < number_of_images:
 		cv2.imwrite(path + img_name, image_resized)
 		print("{} written!".format(img_name))
 		img_counter += 1
+		if args.size == "random":
+			size = "random"
