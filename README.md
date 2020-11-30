@@ -19,7 +19,7 @@ To start capturing, call the capture_images.py script with the following flags:
 - --number: The number of images you want to capture (required)
 - --iclass: The image class you want to capture data for (e.g. banana) (required)
 - --dataset: Whether you want to capture data for your train or test set (required)
-- --size: You can choose between "large" (1080 x 720), "medium" (600 x 600) and "small" (300 x 300) image size (optional, default is "large").
+- --size: You can choose between "large" (1080 x 720), "medium" (600 x 600) and "small" (300 x 300) image size (optional, default is "random", which randomly selects a different size after every image capture).
 
 Start capturing images with your webcam by calling:
 ```
@@ -27,5 +27,5 @@ python3 capture_images.py --number [NUMBER] --iclass [ICLASS] --dataset [DATASET
 ```
 Example:
 ```
-python3 capture_images.py --number 20 --iclass apple --dataset train --size small
+python3 capture_images.py --number 20 --iclass apple --dataset train --size random
 ```
