@@ -8,7 +8,7 @@ parser = argparse.ArgumentParser(description='Take a specific number of images w
 parser.add_argument('-n', '--number', type=int, help='`Specifiy the number of images you want to take.', required=True)
 parser.add_argument('-ic', '--iclass', help='`Specifiy the class of images you want to take.', choices=['apple', 'banana', 'broccoli', 'paprika', 'aubergine', 'cucumber', 'orange', 'pear'], required=True)
 parser.add_argument('-ds', '--dataset', help='`Specifiy the class of images you want to take.', choices=['train', 'test'], required=True)
-parser.add_argument('-s', '--size', ngars="?", default="large", help='`Specifiy the class of images you want to take.', choices=['large', 'medium', 'small'])
+parser.add_argument('-s', '--size', default="large", help='`Specifiy the class of images you want to take.', choices=['large', 'medium', 'small'])
 
 args = parser.parse_args()
 number_of_images = args.number
@@ -30,7 +30,7 @@ while img_counter < number_of_images:
 		break
 	if size == "small":
 		image_resized = cv2.resize(image, (300, 300))
-	else if size == "medium":
+	elif size == "medium":
 		image_resized = cv2.resize(image, (608, 608))
 	else:
 		image_resized = cv2.resize(image, (1080, 720))
